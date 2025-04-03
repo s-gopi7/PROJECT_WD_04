@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50; /* Darker background */
+            color: #fff;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block; /* Use inline-block for spacing */
+            margin: 0 25px; /* Increased spacing */
+        }
+
+        nav ul li a {
+            color: #ecf0f1; /* Light text color */
+            text-decoration: none;
+            padding: 10px 15px; /* Padding for click area */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+            position: relative;
+        }
+
+        nav ul li a:hover {
+            background-color: #3498db; /* Blue hover effect */
+            color: #fff;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0; /* Changed bottom position */
+            left: 0;
+            background-color: #3498db;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        nav ul li a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+
+
+        .section {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .hero {
+            text-align: center;
+            background-color: #e0f7fa;
+        }
+
+        .hero-content {
+            padding: 50px 20px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            /* removed border-radius: 50%; */
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-img:hover{
+            transform: scale(1.1);
+        }
+
+        .about, .projects, .contact {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .project {
+            border-bottom: 1px solid #eee;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .project:last-child {
+            border-bottom: none;
+        }
+
+        .project:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #00bcd4;
+            border-bottom: 2px solid #00bcd4;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #00bcd4;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #009688;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="https://erp.lbrce.ac.in/Admissions/Stu_Photo_Sign/P-23761A54B5.jpg?time=03/04/2025%2020:34:48" class="profile-img">
+            <h1>Sanagani Gopi</h1>
+            <p>Web Developer | Designer</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+           Gopi is a passionate and results-driven web developer with a strong foundation in HTML, CSS, JavaScript, and Python. Through academic pursuits and hands-on projects, he has honed his ability to craft dynamic and user-friendly digital experiences. A quick learner with an adaptive mindset, Gopi embraces new technologies and challenges with enthusiasm. His commitment to excellence, problem-solving skills, and collaborative spirit enable him to contribute effectively in team environments. Dedicated to continuous learning and innovation, he strives to build impactful solutions that enhance user experiences and drive success.        </p>
+        <p>
+            Gopi is a dedicated web developer with a strong work ethic and a track record of building efficient and user-centric web applications. His passion for enhancing user experience drives him to continuously refine his skills and stay ahead of emerging technologies. With excellent communication and interpersonal abilities, he thrives in collaborative environments and values teamwork. Eager to contribute his expertise to a forward-thinking organization, Gopi is committed to innovation, learning, and making a meaningful impact in the digital space.
+
+
+
+
+
+
+
+
+
+        </p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>weather-App</h3>
+            <p>It can predict the climate information according to respected city.</p>
+        </div>
+        <div class="project">
+            <h3>Tic-Tac_toc</h3>
+            <p>Game implementation.</p>
+        </div>
+        <div class="project">
+          <h3>Share items with Nutrition Info</h3>
+          <p>We can see all the Nutrition information based on the item</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: sanaganigopi77@gmail.com</p>
+        <p>Phone: 7013**70*7</p>
+        <p>LinkedIn: <a href="www.linkedin.com/in/gopi-sanagani">Gopi_Sanagani
+</a></p>
+    </section>
+
+    <script>
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
